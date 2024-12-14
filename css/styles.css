@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.highlight {
+  @apply text-[#0E38CD];
+}

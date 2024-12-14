@@ -10,6 +10,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <style>
+      .highlight {
+        color: #0e38cd;
+      }
+      .fill {
+        background: linear-gradient(to right, #0066cc, #7a58d0);
+        color: white;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        padding: 1rem 8px;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .fill:hover {
+        background: linear-gradient(to right, #004bb5, #5a3f96);
+      }
+
+      .section1-bg {
+        background-image: url(./assets/section1bg.png);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .section1p2 {
+        background-image: url(./assets/women.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+      .section1-ads {
+        background: hsla(252, 92%, 41%, 1);
+
+        background: linear-gradient(
+          180deg,
+          hsla(252, 92%, 41%, 1) 0%,
+          hsla(277, 92%, 41%, 1) 100%
+        );
+
+        background: -moz-linear-gradient(
+          180deg,
+          hsla(252, 92%, 41%, 1) 0%,
+          hsla(277, 92%, 41%, 1) 100%
+        );
+
+        background: -webkit-linear-gradient(
+          180deg,
+          hsla(252, 92%, 41%, 1) 0%,
+          hsla(277, 92%, 41%, 1) 100%
+        );
+
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2E08C7", endColorstr="#7E08C7", GradientType=1 );
+      }
+    </style>
   </head>
   <body style="font-family: righteous">
     <header>
@@ -38,9 +96,56 @@
         </div>
         <div class="auth-buttons">
           <button>Login</button>
-          <button>Sign Up</button>
+          <button class="fill">Sign Up</button>
         </div>
       </div>
     </header>
+    <section>
+      <div class="section1">
+        <div class="flex pt-20 pl-40 section1-bg text-[#FFFFFF] min-h-[45rem]">
+          <div class="flex flex-col gap-10 w-1/2 pt-20">
+            <div>
+              <div>successful coaches are visionaries</div>
+              <div class="section1-heading text-5xl">
+                Godd <span> coaching </span> is goo teaching € nothing else.
+              </div>
+            </div>
+            <div>
+              <button>View Courses</button>
+              <button>Get Free Consultation</button>
+            </div>
+            <div class="section1-search">
+              <input placeholder="What do you want to learn today?" />
+              <button><span></span>Search</button>
+            </div>
+            <div></div>
+          </div>
+          <div class="section1p2 w-1/2">
+            <div class=""></div>
+          </div>
+        </div>
+        <div class="section1-ads flex justify-evenly items-center h-20">
+          <span class="w-20"
+            ><img src="./assets/spotify.png" alt="" width="100%"
+          /></span>
+          <span class="w-20"
+            ><img src="./assets/amazon.png" alt="" width="100%"
+          /></span>
+          <span class="w-20"
+            ><img src="./assets/spotify.png" alt="" width="100%"
+          /></span>
+          <span class="w-20"
+            ><img src="./assets/cisco.png" alt="" width="100%"
+          /></span>
+          <span class="w-20"
+            ><img src="./assets/logitech.png" alt="" width="100%"
+          /></span>
+          <span class="w-20"
+            ><img src="./assets/amazon.png" alt="" width="100%"
+          /></span>
+        </div>
+      </div>
+    </section>
+    <section></section>
   </body>
 </html>
