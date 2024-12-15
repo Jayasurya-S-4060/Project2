@@ -11,15 +11,49 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <style>
+      :root {
+        --font-white: #ffffff;
+        --font-black: #4a4a4a;
+      }
+
+      .wrapper {
+        padding: 5rem 8rem;
+        width: 100%;
+      }
+
+      .footer-about {
+        padding: 5rem 4rem;
+      }
+
       .highlight {
         color: #0e38cd;
       }
       .fill {
-        background: linear-gradient(to right, #0066cc, #7a58d0);
-        color: white;
+        background: hsla(245, 67%, 42%, 1);
+
+        background: linear-gradient(
+          135deg,
+          hsla(245, 67%, 42%, 1) 0%,
+          hsla(259, 63%, 59%, 1) 100%
+        );
+
+        background: -moz-linear-gradient(
+          135deg,
+          hsla(245, 67%, 42%, 1) 0%,
+          hsla(259, 63%, 59%, 1) 100%
+        );
+
+        background: -webkit-linear-gradient(
+          135deg,
+          hsla(245, 67%, 42%, 1) 0%,
+          hsla(259, 63%, 59%, 1) 100%
+        );
+
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3023B2", endColorstr="#7F56D9", GradientType=1 );
+        color: var(--font-white);
         font-family: Arial, sans-serif;
         font-weight: bold;
-        padding: 1rem 8px;
+        padding: 1rem 2.3rem;
         border-radius: 5px;
         border: none;
         text-align: center;
@@ -29,7 +63,11 @@
       }
 
       .fill:hover {
-        background: linear-gradient(to right, #004bb5, #5a3f96);
+      }
+
+      .link {
+        color: var(--font-black);
+        padding: 0 3rem;
       }
 
       .section1-bg {
@@ -67,6 +105,63 @@
 
         filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2E08C7", endColorstr="#7E08C7", GradientType=1 );
       }
+
+      .section2 {
+        background: rgb(217, 236, 255);
+        background: linear-gradient(
+          357deg,
+          rgba(217, 236, 255, 1) 0%,
+          rgba(240, 243, 255, 0.9977240896358543) 100%
+        );
+      }
+
+      .section3 {
+        background: rgb(115, 159, 232);
+        background: linear-gradient(
+          25deg,
+          rgba(115, 159, 232, 1) 0%,
+          rgba(79, 24, 202, 1) 100%
+        );
+      }
+
+      .section4 {
+        background: rgb(217, 236, 255);
+        background: linear-gradient(
+          54deg,
+          rgba(217, 236, 255, 1) 0%,
+          rgba(217, 236, 255, 0) 100%
+        );
+      }
+
+      .section5-wrapper {
+        background: rgb(219, 237, 255);
+        background: linear-gradient(
+          34deg,
+          rgba(219, 237, 255, 1) 0%,
+          rgba(219, 237, 255, 0) 100%
+        );
+      }
+      .footer-about {
+        background: rgb(71, 122, 227);
+        background: linear-gradient(
+          209deg,
+          rgba(71, 122, 227, 1) 0%,
+          rgba(147, 27, 189, 1) 100%
+        );
+      }
+
+      .footer-socialLinks {
+        background: rgb(71, 122, 227);
+        background: linear-gradient(
+          209deg,
+          rgb(72 69 224 / 75%) 0%,
+          rgba(147, 27, 189, 1) 100%
+        );
+      }
+
+      .footer-rights {
+        background-color: #7448d5;
+      }
     </style>
   </head>
   <body style="font-family: righteous">
@@ -95,7 +190,7 @@
           </span>
         </div>
         <div class="auth-buttons">
-          <button>Login</button>
+          <button class="link">Login</button>
           <button class="fill">Sign Up</button>
         </div>
       </div>
@@ -107,22 +202,23 @@
             <div>
               <div>successful coaches are visionaries</div>
               <div class="section1-heading text-5xl">
-                Godd <span> coaching </span> is goo teaching € nothing else.
+                Godd <span class="highlight"> coaching </span> is goo teaching €
+                nothing else.
               </div>
             </div>
             <div>
               <button>View Courses</button>
               <button>Get Free Consultation</button>
             </div>
-            <div class="section1-search">
+            <div
+              class="flex justify-between section1-search bg-[--font-white] w-84 rounded-sm px-4 py-2"
+            >
               <input placeholder="What do you want to learn today?" />
-              <button><span></span>Search</button>
+              <button class="fill"><span></span>Search</button>
             </div>
             <div></div>
           </div>
-          <div class="section1p2 w-1/2">
-            <div class=""></div>
-          </div>
+          <div class="section1p2 w-1/2"></div>
         </div>
         <div class="section1-ads flex justify-evenly items-center h-20">
           <span class="w-20"
@@ -146,6 +242,325 @@
         </div>
       </div>
     </section>
-    <section></section>
+    <section class="section2 wrapper">
+      <div class="flex justify-center">
+        <div class="relative center text-center mb-20">
+          <div class="absolute -left-40 justify-center w-14">
+            <img src="./assets/circle.png" width="100%" alt="" />
+          </div>
+          <div>Featured <span class="highlight"> Course </span></div>
+          <div>The feature course are we invented our teaching part</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 justify-between flex-wrap">
+        <div class="w-64 overflow-hidden rounded-lg">
+          <div class="">
+            <img src="./assets/courseImg1.png" alt="" width="100%" />
+          </div>
+          <div class="flex flex-col gap-4 py-5 px-2 bg-[--font-white]">
+            <div class="flex justify-between">
+              <div>1,957 Students</div>
+              <div>01h 59m</div>
+            </div>
+            <div>Motion Graphics:Create a Nice Typogrphy Animation</div>
+            <div class="flex justify-between">
+              <div>Rs.499</div>
+              <div><img src="./assets/shop.png" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-64 overflow-hidden rounded-lg">
+          <div class="">
+            <img src="./assets/courseImg2.png" alt="" width="100%" />
+          </div>
+          <div class="flex flex-col gap-4 py-5 px-2 bg-[--font-white]">
+            <div class="flex justify-between">
+              <div>1,957 Students</div>
+              <div>01h 59m</div>
+            </div>
+            <div>Motion Graphics:Create a Nice Typogrphy Animation</div>
+            <div class="flex justify-between">
+              <div>Rs.499</div>
+              <div><img src="./assets/shop.png" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-64 overflow-hidden rounded-lg">
+          <div class="">
+            <img src="./assets/courseImg3.png" alt="" width="100%" />
+          </div>
+          <div class="flex flex-col gap-4 py-5 px-2 bg-[--font-white]">
+            <div class="flex justify-between">
+              <div>1,957 Students</div>
+              <div>01h 59m</div>
+            </div>
+            <div>Motion Graphics:Create a Nice Typogrphy Animation</div>
+            <div class="flex justify-between">
+              <div>Rs.499</div>
+              <div><img src="./assets/shop.png" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-64 overflow-hidden rounded-lg">
+          <div class="">
+            <img src="./assets/courseImg4.png" alt="" width="100%" />
+          </div>
+          <div class="flex flex-col gap-4 py-5 px-2 bg-[--font-white]">
+            <div class="flex justify-between">
+              <div>1,957 Students</div>
+              <div>01h 59m</div>
+            </div>
+            <div>Motion Graphics:Create a Nice Typogrphy Animation</div>
+            <div class="flex justify-between">
+              <div>Rs.499</div>
+              <div><img src="./assets/shop.png" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-64 overflow-hidden rounded-lg">
+          <div class="">
+            <img src="./assets/courseImg5.png" alt="" width="100%" />
+          </div>
+          <div class="flex flex-col gap-4 py-5 px-2 bg-[--font-white]">
+            <div class="flex justify-between">
+              <div>1,957 Students</div>
+              <div>01h 59m</div>
+            </div>
+            <div>Motion Graphics:Create a Nice Typogrphy Animation</div>
+            <div class="flex justify-between">
+              <div>Rs.499</div>
+              <div><img src="./assets/shop.png" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-64 overflow-hidden rounded-lg">
+          <div class="">
+            <img src="./assets/courseImg6.png" alt="" width="100%" />
+          </div>
+          <div class="flex flex-col gap-4 py-5 px-2 bg-[--font-white]">
+            <div class="flex justify-between">
+              <div>1,957 Students</div>
+              <div>01h 59m</div>
+            </div>
+            <div>Motion Graphics:Create a Nice Typogrphy Animation</div>
+            <div class="flex justify-between">
+              <div>Rs.499</div>
+              <div><img src="./assets/shop.png" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex my-20 justify-center">
+        <button class="fill">Explore Course</button>
+      </div>
+    </section>
+    <section class="section3 wrapper relative">
+      <div class="absolute left-0 justify-center w-24">
+        <img src="./assets/sec3element.png" width="100%" alt="" />
+      </div>
+      <div class="flex justify-center">
+        <div class="center text-center mb-20 text-[--font-white]">
+          <div>
+            Why <span class="highlight"> Learn </span> with our courses?
+          </div>
+          <div>
+            We are providing the best courses and top classes.And extradinery
+            placement training.....
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center gap-20">
+        <div
+          class="max-w-64 text-[--font-white] flex flex-col gap-4 items-center"
+        >
+          <div class="w-24">
+            <img src="./assets/sec3icon1.png" width="100%" alt="" />
+          </div>
+          <div>01.Learn</div>
+          <div>
+            Learn continually. There is always “one more thing”to learn.
+          </div>
+        </div>
+        <div
+          class="max-w-64 text-[--font-white] flex flex-col gap-4 items-center"
+        >
+          <div class="w-24">
+            <img src="./assets/sec3icon2.png" width="100%" alt="" />
+          </div>
+          <div>02.Graduate</div>
+          <div>Be bold,be courageous, be your best.</div>
+        </div>
+        <div
+          class="max-w-64 text-[--font-white] flex flex-col gap-4 items-center"
+        >
+          <div class="w-24">
+            <img src="./assets/sec3icon3.png" width="100%" alt="" />
+          </div>
+          <div>03.Work</div>
+          <div>
+            Great companies are built in the office,with hard work put in by
+            team.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section4 wrapper">
+      <div class="flex justify-center">
+        <div class="center text-center mb-20">
+          <div>Top <span class="highlight"> Categories </span></div>
+          <div>100+ unique online course list designs</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 justify-between flex-wrap">
+        <div
+          class="py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-48"
+        >
+          <div class="w-20">
+            <img src="./assets/sec4icon1.png" alt="" width="100%" />
+          </div>
+          <div>Digtal Marketing</div>
+          <div>25 Courses</div>
+        </div>
+        <div
+          class="py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-48"
+        >
+          <div class="w-20">
+            <img src="./assets/sec4icon2.png" alt="" width="100%" />
+          </div>
+          <div>Digtal Marketing</div>
+          <div>25 Courses</div>
+        </div>
+        <div
+          class="py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-48"
+        >
+          <div class="w-20">
+            <img src="./assets/sec4icon3.png" alt="" width="100%" />
+          </div>
+          <div>Digtal Marketing</div>
+          <div>25 Courses</div>
+        </div>
+        <div
+          class="py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-48"
+        >
+          <div class="w-20">
+            <img src="./assets/sec4icon4.png" alt="" width="100%" />
+          </div>
+          <div>Digtal Marketing</div>
+          <div>25 Courses</div>
+        </div>
+        <div
+          class="py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-48"
+        >
+          <div class="w-20">
+            <img src="./assets/sec4icon5.png" alt="" width="100%" />
+          </div>
+          <div>Digtal Marketing</div>
+          <div>25 Courses</div>
+        </div>
+        <div
+          class="py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-48"
+        >
+          <div class="w-20">
+            <img src="./assets/sec4icon6.png" alt="" width="100%" />
+          </div>
+          <div>Digtal Marketing</div>
+          <div>25 Courses</div>
+        </div>
+      </div>
+    </section>
+    <section class="section5-wrapper">
+      <div></div>
+      <div class="section6 wrapper">
+        <div class="flex flex-col justify-center">
+          <div class="relative center text-center mb-20">
+            <div class="absolute -left-20 justify-center w-14">
+              <img src="./assets/sec6element.png" width="100%" alt="" />
+            </div>
+            <div><span class="highlight"> Testimonials </span></div>
+            <div>What our student say about us</div>
+          </div>
+          <div class="w-50">
+            <img src="./assets//chat.png" width="100%" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-about flex justify-between">
+        <div class="flex flex-col gap-6">
+          <div>Connect</div>
+          <div class="w-32"><img src="./assets/logo.png" width="100%" /></div>
+          <div>
+            Sri Jagannath Nivas,8-1-164/345/A/1,<br />
+            Pragati Colony, Mailardevpally, Nawab<br />
+            Saheb Kunta, Hyd, 500005
+          </div>
+        </div>
+        <div class="flex gap-24">
+          <div class="footer-section">
+            <h3>Classes</h3>
+            <ul>
+              <li><a href="#">Classroom courses</a></li>
+              <li><a href="#">Virtual classroom courses</a></li>
+              <li><a href="#">E-learning courses</a></li>
+              <li><a href="#">Video Courses</a></li>
+              <li><a href="#">Offline Courses</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Community</h3>
+            <ul>
+              <li><a href="#">Learners</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Transactions</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Quick links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Professional Education</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Admissions</a></li>
+              <li><a href="#">Testimonial</a></li>
+              <li><a href="#">Programs</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>More</h3>
+            <ul>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Investors</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-socialLinks flex justify-center gap-20 py-4">
+        <div class="w-14">
+          <img src="./assets/insta.png" width="100%" alt="" />
+        </div>
+        <div class="w-14">
+          <img src="./assets/whatsapp.png" width="100%" alt="" />
+        </div>
+        <div class="w-14">
+          <img src="./assets/twitter.png" width="100%" alt="" />
+        </div>
+        <div class="w-14">
+          <img src="./assets/linkedin.png" width="100%" alt="" />
+        </div>
+        <div class="w-14">
+          <img src="./assets/yt.png" width="100%" alt="" />
+        </div>
+      </div>
+      <div class="footer-rights text-[--font-white] text-center">
+        Copyright @ 2023 askmeidentity. All Rights Reserved
+      </div>
+    </footer>
   </body>
 </html>
