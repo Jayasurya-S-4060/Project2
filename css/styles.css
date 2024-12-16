@@ -1,15 +1,12 @@
 :root {
   --font-white: #ffffff;
-  --font-black: #4a4a4a;
+  --font-black: #323232;
+  --font-gray: #4e596b;
 }
 
 .wrapper {
-  padding: 5rem 8rem;
+  padding: 7em 8rem;
   width: 100%;
-}
-
-.footer-about {
-  padding: 5rem 4rem;
 }
 
 .highlight {
@@ -114,7 +111,7 @@
 .section4 {
   background: rgb(217, 236, 255);
   background: linear-gradient(
-    54deg,
+    0deg,
     rgba(217, 236, 255, 1) 0%,
     rgba(217, 236, 255, 0) 100%
   );
