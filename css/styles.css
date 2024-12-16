@@ -50,7 +50,8 @@
 
 @media screen and (max-width: 700px) {
   .fill {
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 12px;
   }
 }
 
@@ -75,7 +76,7 @@
 
 .link {
   color: var(--font-black);
-  padding: 0 3rem;
+  padding: 0 2rem;
 }
 
 .section1-bg {
@@ -253,6 +254,14 @@
   }
   .section1-child {
     width: 100%;
+    padding: 0 1rem;
+  }
+  .link {
+    padding: 0 3px;
+  }
+  .section1p2 {
+    width: 100%;
+    margin: 1rem 0;
     padding: 0 1rem;
   }
 }
