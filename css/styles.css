@@ -9,6 +9,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 700px) {
+  .wrapper {
+    padding: 2rem 0.5rem;
+  }
+}
+
 .highlight {
   color: #0e38cd;
 }
@@ -40,6 +46,12 @@
   font-size: 16px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease; /* Add smooth hover effects */
+}
+
+@media screen and (max-width: 700px) {
+  .fill {
+    padding: 0.5rem 1.5rem;
+  }
 }
 
 .fill:hover {
@@ -76,6 +88,7 @@
   background-repeat: no-repeat;
   background-position: bottom;
 }
+
 .section1-ads {
   background: hsla(252, 92%, 41%, 1);
 
@@ -207,8 +220,39 @@
   cursor: pointer;
 }
 
-/* Card Hover Effect */
 .card-wrapper:hover {
-  transform: translateY(-10px) scale(1.05); /* Lift and slightly enlarge */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a deeper shadow */
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 700px) {
+  .section1p2 {
+    background-image: none;
+  }
+  .section1-child {
+    margin: 10px auto;
+  }
+
+  .input-wrapper {
+    height: 3.5rem;
+    width: 100%;
+    background-color: #ffffff80;
+    color: var(--font-white);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    padding-left: 2rem;
+    background: #ffffff2b;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  br {
+    display: none;
+  }
+  .section1-child {
+    width: 100%;
+    padding: 0 1rem;
+  }
 }

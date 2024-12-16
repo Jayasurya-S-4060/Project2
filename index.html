@@ -25,14 +25,14 @@
   <body style="font-family: righteous">
     <header>
       <div
-        class="site-header flex justify-between items-center px-10 py-5 w-full"
+        class="site-header flex justify-between items-center py-5 w-full sm:px-10"
       >
         <div class="w-24 site-logo mr-10">
           <img src="./assets/logo.png" />
         </div>
 
-        <div class="flex justify-between items-center gap-20">
-          <div class="nav-links text-lg">
+        <div class="flex justify-between items-center sm:gap-20">
+          <div class="nav-links text-lg hidden lg:block">
             <a href="#Home " class="mx-2">Home</a>
             <a href="#About" class="mx-2">About</a>
             <a href="#Courses" class="mx-2">Courses</a>
@@ -58,16 +58,20 @@
     </header>
     <section>
       <div class="section1">
-        <div class="relative flex section1-bg text-[#FFFFFF] pt-28">
+        <div
+          class="relative justify-center flex flex-col lg:flex-row lg:flex section1-bg text-[#FFFFFF] pt-4 lg:pt-28"
+        >
           <div
-            class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-48 z-1"
+            class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 lg:w-48 z-1"
           >
             <img src="./assets/element1.png" width="100%" alt="" />
           </div>
-          <div class="flex flex-col gap-10 w-1/2 pl-40 pb-40 z-10">
+          <div
+            class="section1-child flex flex-col gap-10 lg:w-1/2 lg:pl-40 lg:pb-40 z-10"
+          >
             <div>
               <div>successful coaches are visionaries</div>
-              <div class="section1-heading text-7xl">
+              <div class="section1-heading text-xl lg:text-7xl">
                 Godd <span class="highlight"> coaching </span> is good teaching
                 € nothing else.
               </div>
@@ -90,10 +94,8 @@
               />
               <button class="fill"><span></span>Search</button>
             </div>
-
-            <div></div>
           </div>
-          <div class="section1p2 w-1/2 z-10 flex gap-2 pl-20">
+          <div class="section1p2 w-1/2 z-10 flex gap-2 lg:pl-20">
             <div>
               <img src="./assets/section1ele2.png" />
             </div>
@@ -110,22 +112,22 @@
           </div>
         </div>
         <div class="section1-ads flex justify-evenly items-center h-20">
-          <span class="w-20"
+          <span class="w-10 lg:w-20"
             ><img src="./assets/spotify.png" alt="" width="100%"
           /></span>
-          <span class="w-20"
+          <span class="w-10 lg:w-20"
             ><img src="./assets/amazon.png" alt="" width="100%"
           /></span>
-          <span class="w-20"
+          <span class="w-10 lg:w-20"
             ><img src="./assets/spotify.png" alt="" width="100%"
           /></span>
-          <span class="w-20"
+          <span class="w-10 lg:w-20"
             ><img src="./assets/cisco.png" alt="" width="100%"
           /></span>
-          <span class="w-20"
+          <span class="w-10 lg:w-20"
             ><img src="./assets/logitech.png" alt="" width="100%"
           /></span>
-          <span class="w-20"
+          <span class="w-10 lg:w-20"
             ><img src="./assets/amazon.png" alt="" width="100%"
           /></span>
         </div>
@@ -290,7 +292,7 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-center gap-32">
+      <div class="lg:flex justify-center gap-32">
         <div
           class="max-w-64 text-[--font-white] flex flex-col gap-4 items-center"
         >
@@ -341,7 +343,7 @@
       </div>
       <div class="flex items-center gap-4 justify-between flex-wrap">
         <div
-          class="card-select py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-48"
+          class="card-select py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-[100%] lg:min-w-48"
         >
           <div class="w-16">
             <img src="./assets/sec4icon1.png" alt="" width="100%" />
@@ -353,7 +355,7 @@
           <div class="text-sm text-[--font-gray]">18 Courses</div>
         </div>
         <div
-          class="card-select py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-48"
+          class="card-select py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-[100%] lg:min-w-48"
         >
           <div class="w-16">
             <img src="./assets/sec4icon2.png" alt="" width="100%" />
@@ -365,7 +367,7 @@
           <div class="text-sm text-[--font-gray]">59 Courses</div>
         </div>
         <div
-          class="card-select py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-48"
+          class="card-select py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-[100%] lg:min-w-48"
         >
           <div class="w-16">
             <img src="./assets/sec4icon3.png" alt="" width="100%" />
@@ -377,7 +379,7 @@
           <div class="text-sm text-[--font-gray]">68 Courses</div>
         </div>
         <div
-          class="card-select py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-48"
+          class="card-select py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-[100%] lg:min-w-48"
         >
           <div class="w-16">
             <img src="./assets/sec4icon4.png" alt="" width="100%" />
@@ -389,7 +391,7 @@
           <div class="text-sm text-[--font-gray]">25 Courses</div>
         </div>
         <div
-          class="card-select py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-48"
+          class="card-select py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-[100%] lg:min-w-48"
         >
           <div class="w-16">
             <img src="./assets/sec4icon5.png" alt="" width="100%" />
@@ -401,7 +403,7 @@
           <div class="text-sm text-[--font-gray]">110 Courses</div>
         </div>
         <div
-          class="card-select py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-48"
+          class="card-select py-8 overflow-hidden rounded-lg bg-[--font-white] flex flex-col justify-between items-center min-h-64 min-w-[100%] lg:min-w-48"
         >
           <div class="w-16">
             <img src="./assets/sec4icon6.png" alt="" width="100%" />
@@ -417,25 +419,25 @@
     <section class="section5-wrapper">
       <div class="section5 wrapper text-[--font-white] mb-6">
         <div class="card-wrapper relative">
-          <div class="absolute w-14 z-0 -left-6 -bottom-4">
+          <div class="absolute w-14 z-0 -left-6 -bottom-4 hidden lg:block">
             <img src="./assets//cardIcon3.png" width="100%" />
           </div>
-          <div class="absolute w-14 -bottom-32 -right-0 z-0">
+          <div class="absolute w-14 -bottom-32 -right-0 z-0 hidden lg:block">
             <img src="./assets//cardIcon4.png" width="100%" />
           </div>
           <div
-            class="section5-card relative max-w-110 min-h-96 section5-card rounded-2xl overflow-hidden flex flex-col justify-center items-center gap-6"
+            class="section5-card relative w-[100%] lg:max-w-110 min-h-60 lg:min-h-96 section5-card rounded-2xl overflow-hidden flex flex-col justify-center items-center gap-6"
           >
-            <div class="absolute left-7 w-40">
+            <div class="absolute left-7 lg:w-40 hidden lg:block">
               <img src="./assets//cardIcon1.png" width="100%" />
             </div>
-            <div class="absolute right-5 w-40">
+            <div class="absolute right-5 w-40 hidden lg:block">
               <img src="./assets//cardIcon2.png" width="100%" />
             </div>
-            <div class="absolute w-14 z-1 top-16">
+            <div class="absolute w-14 z-1 top-16 hidden lg:block">
               <img src="./assets//cardIcon4.png" width="100%" />
             </div>
-            <div class="text-4xl text-center z-10">
+            <div class="text-lg lg:text-4xl text-center z-10">
               Subscribe For Get Update <br />
               Every New Courses
             </div>
@@ -458,7 +460,9 @@
           >
             <img src="./assets/play.png" width="100%" />
           </div>
-          <div class="absolute z-10 w-28 -bottom-7 -right-10">
+          <div
+            class="absolute z-10 w-14 lg:w-28 lg:-bottom-7 lg:-right-10 hidden lg:block"
+          >
             <img src="./assets/vidicon.png" width="100%" />
           </div>
           <video
@@ -474,7 +478,7 @@
       </div>
       <div class="section6 wrapper">
         <div class="flex flex-col justify-center">
-          <div class="relative center text-center mb-20">
+          <div class="relative center text-center mb-4 lg:mb-20">
             <div class="absolute -left-20 justify-center w-14">
               <img src="./assets/sec6element.png" width="100%" alt="" />
             </div>
@@ -492,7 +496,7 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="footer-about flex justify-between px-20 py-12">
+      <div class="footer-about lg:flex justify-between px-4 lg:px-20 py-12">
         <div class="flex flex-col gap-6">
           <div class="text-xl">Connect</div>
           <div class="w-32"><img src="./assets/logo.png" width="100%" /></div>
@@ -502,7 +506,7 @@
             Saheb Kunta, Hyd, 500005
           </div>
         </div>
-        <div class="flex gap-24">
+        <div class="lg:flex gap-24 flex-wrap">
           <div class="footer-section">
             <div class="text-2xl mb-4">Classes</div>
             <ul class="flex flex-col gap-2">
