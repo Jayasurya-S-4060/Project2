@@ -14,25 +14,21 @@
 }
 .fill {
   background: hsla(245, 67%, 42%, 1);
-
   background: linear-gradient(
     135deg,
     hsla(245, 67%, 42%, 1) 0%,
     hsla(259, 63%, 59%, 1) 100%
   );
-
   background: -moz-linear-gradient(
     135deg,
     hsla(245, 67%, 42%, 1) 0%,
     hsla(259, 63%, 59%, 1) 100%
   );
-
   background: -webkit-linear-gradient(
     135deg,
     hsla(245, 67%, 42%, 1) 0%,
     hsla(259, 63%, 59%, 1) 100%
   );
-
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3023B2", endColorstr="#7F56D9", GradientType=1 );
   color: var(--font-white);
   font-family: Arial, sans-serif;
@@ -43,10 +39,26 @@
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease; /* Add smooth hover effects */
 }
 
 .fill:hover {
+  background: linear-gradient(
+    135deg,
+    hsla(259, 63%, 59%, 1) 0%,
+    hsla(275, 55%, 70%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    135deg,
+    hsla(259, 63%, 59%, 1) 0%,
+    hsla(275, 55%, 70%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    135deg,
+    hsla(259, 63%, 59%, 1) 0%,
+    hsla(275, 55%, 70%, 1) 100%
+  );
+  transform: scale(1.05);
 }
 
 .link {
@@ -55,9 +67,7 @@
 }
 
 .section1-bg {
-  background-image: url(../assets/section1bg.png);
-  background-position: center;
-  background-size: cover;
+  background: linear-gradient(135deg, #6d1bdf 0%, #241daa 50%, #192173 100%);
 }
 
 .section1p2 {
@@ -186,4 +196,19 @@
 
 .video-player {
   border-radius: 3rem;
+}
+
+.card-wrapper {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Card Hover Effect */
+.card-wrapper:hover {
+  transform: translateY(-10px) scale(1.05); /* Lift and slightly enlarge */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a deeper shadow */
 }
