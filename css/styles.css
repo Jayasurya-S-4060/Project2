@@ -246,9 +246,6 @@
     padding-left: 2rem;
     background: #ffffff2b;
   }
-}
-
-@media screen and (max-width: 700px) {
   br {
     display: none;
   }
@@ -260,7 +257,7 @@
     padding: 0 3px;
   }
   .section1p2 {
-    width: 100%;
+    /* width: 100% !important; */
     margin: 1rem 0;
     padding: 0 1rem;
   }
